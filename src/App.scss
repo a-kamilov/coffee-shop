@@ -1,12 +1,142 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  color: white;
+  text-decoration: none;
+}
 
-.App{
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Righteous&family=Urbanist&display=swap");
+
+// font-family: 'Inter', sans-serif;
+// font-family: 'Righteous', cursive;
+// font-family: 'Urbanist', sans-serif;
+
+.App {
   border: 4px solid red;
+  max-width: 1920px;
+  width: 100%;
+  background: #14110e;
+  & > .header {
+    position: relative;
+    & > .navbar {
+      height: 125px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      font-family: "Inter", sans-serif;
+      background: #1c1814;
+      & > img {
+        cursor: pointer;
+        margin: 0 181px 0 250px;
+      }
+      & > ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        & > li {
+          margin: 0 24px;
+          & > a {
+            font-size: 18px;
+            &:hover {
+              color: #c99e71;
+            }
+          }
+        }
+      }
+    }
+    & > .h_content {
+      background: url(components/img/h_content.png) center center / cover;
+      padding: 199px 0 199px 375px;
+      & > .left {
+        width: 540px;
+        color: white;
+        & > h1 {
+          font-family: "Righteous", cursive;
+          font-size: 72px;
+          font-weight: 300;
+        }
+        p {
+          font-family: "Urbanist", sans-serif;
+          font-size: 20px;
+          line-height: 36px;
+          margin: 32px 0 64px;
+        }
+        button {
+          font-family: "Inter", sans-serif;
+          width: 202px;
+          height: 70px;
+          font-size: 18px;
+          color: white;
+          background: #c99e71;
+          border: none;
+          outline: none;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    & > .video {
+      position: absolute;
+      bottom: 138px;
+      right: 375px;
+      text-align: center;
+      & > i {
+        line-height: 70px;
+        width: 70px;
+        height: 70px;
+        border: 1.5px solid white;
+        border-radius: 50%;
+        font-size: 18px;
+      }
+      &::after {
+        content: "Play video";
+        display: block;
+        text-transform: uppercase;
+        font-family: "Inter", sans-serif;
+        margin-top: 20px;
+      }
+    }
+  }
 
+  & > .c_1 {
+    border: 2px solid red;
+    & > .cards {
+      padding-top: 140px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: auto;
+      & > .card {
+        color: white;
+        margin: 0 18px;
+        & > p {
+          font-family: "Righteous", cursive;
+          font-size: 24px;
+          margin-bottom: 24px;
+          &::before {
+            content: "01";
+            padding-right: 12px;
+            color: #c99e71;
+          }
+        }
+        & > .p_2::before {
+          content: "02";
+        }
+        & > .p_3::before {
+          content: "03";
+        }
+      }
+    }
+  }
 
-
+  &>.c_2{
+    border: 2px solid red;
+  }
 }
