@@ -19,6 +19,7 @@ a {
   max-width: 1920px;
   width: 100%;
   background: #14110e;
+  margin: auto;
   & > .header {
     position: relative;
     & > .navbar {
@@ -104,9 +105,7 @@ a {
       }
     }
   }
-
   & > .c_1 {
-    border: 2px solid red;
     & > .cards {
       padding-top: 140px;
       display: flex;
@@ -135,8 +134,73 @@ a {
       }
     }
   }
+  & > .c_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 140px;
+    & > .left {
+      display: flex;
+      flex-direction: column;
+      & > img {
+        height: 302px;
+        width: 298px;
+        &:nth-child(2) {
+          margin-top: 32px;
+        }
+      }
+    }
+    & > .center {
+      height: 635px;
+      width: 298px;
+      margin: 0 32px;
+    }
+    & > .right {
+      width: 510px;
+      padding: 120px 56px 0;
+      background: #1c1814;
+      & > h5 {
+        font-size: 18px;
+        color: #c99e71;
+        font-family: "Urbanist", sans-serif;
+      }
+      & > h1 {
+        font-size: 48px;
+        font-family: "Righteous", cursive;
+        color: white;
+        font-weight: 400;
+        line-height: 62px;
+        margin: 12px 0 36px;
+      }
+      & > p {
+        font-family: "Urbanist", sans-serif;
+        color: white;
+        opacity: 80%;
+        line-height: 28px;
+        text-transform: capitalize;
+      }
+    }
+  }
 
-  &>.c_2{
+  & > .products {
     border: 2px solid red;
+    font-family: "Urbanist", sans-serif;
+    text-align: center;
+    & > h5 {
+      color: #c99e71;
+    }
+    & > h1 {
+      color: white;
+      font-family: "Righteous", cursive;
+      margin: 12px 0 56px;
+      font-weight: 400;
+      font-size: 48px;
+    }
+    &>.cards{
+      &>.card{
+        padding: 48px 48px 36px;
+        background: #121315;
+      }
+    }
   }
 }
