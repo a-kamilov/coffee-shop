@@ -49,7 +49,7 @@ const Header = () => {
             The coofee is brewed by fist roasting the green coffee beans over
             hot coals in brazier. given to Opportunity
           </p>
-          <button>Test Coffee</button>
+          <button className="default_btn">Test Coffee</button>
         </div>
       </div>
       <a className="video" href="#">

@@ -7,6 +7,16 @@ a {
   color: white;
   text-decoration: none;
 }
+.default_btn {
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  background: #c99e71;
+}
+button:hover {
+  cursor: pointer;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Righteous&family=Urbanist&display=swap");
 
@@ -72,11 +82,6 @@ a {
           font-family: "Inter", sans-serif;
           width: 202px;
           height: 70px;
-          font-size: 18px;
-          color: white;
-          background: #c99e71;
-          border: none;
-          outline: none;
           &:hover {
             cursor: pointer;
           }
@@ -186,6 +191,7 @@ a {
     border: 2px solid red;
     font-family: "Urbanist", sans-serif;
     text-align: center;
+    margin-top: 140px;
     & > h5 {
       color: #c99e71;
     }
@@ -196,11 +202,93 @@ a {
       font-weight: 400;
       font-size: 48px;
     }
-    &>.cards{
-      &>.card{
+    & > .cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      & > .card {
         padding: 48px 48px 36px;
         background: #121315;
+        height: 579px;
+        width: 366px;
+        &:nth-child(2) {
+          margin: 0 36px;
+        }
+        &:hover h2 {
+          transition: all linear 500ms;
+          margin: 37px 0;
+        }
+        &:hover .rating,
+        &:hover h4 {
+          transition: all ease-in 500ms;
+          display: none;
+        }
+        &:hover button {
+          transition: all ease-out 500ms;
+          display: block;
+        }
+        & > .rating {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin-top: 37px;
+          & > .fa-star {
+            color: white;
+            margin: 0 3.5px;
+          }
+          & > p {
+            color: #c99e71;
+            margin-right: 10px;
+          }
+          & > .checked {
+            color: #c99e71;
+          }
+        }
+        & > h2 {
+          font-family: "Righteous", cursive;
+          font-weight: 400;
+          font-size: 24px;
+          text-transform: uppercase;
+          margin: 20px 0;
+          color: white;
+        }
+        & > button {
+          margin: auto;
+          display: none;
+          height: 48px;
+          width: 169px;
+          font-family: "Urbanist", sans-serif;
+          &:hover {
+            cursor: pointer;
+          }
+          & > i {
+            padding-right: 15px;
+          }
+        }
+        & > h4 {
+          font-family: "Urbanist", sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          color: white;
+          & > price {
+            color: #c99e71;
+          }
+        }
+      }
+    }
+    & > button {
+      height: 62px;
+      width: 252px;
+      font-family: "Inter", sans-serif;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-top: 56px;
+      &:hover {
+        cursor: pointer;
       }
     }
   }
+
+  
+
 }
