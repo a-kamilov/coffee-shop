@@ -1,6 +1,7 @@
 import React from "react";
 import product from "./img/product.png";
 import coffeeMachine from "./img/coffee_machine.png";
+import { useEffect } from "react";
 
 const Products = () => {
   return (
@@ -17,6 +18,24 @@ const Products = () => {
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <h2>brazil coffee gred</h2>
+            <h4>
+              Price - <price>$320.00/</price>$358
+            </h4>
+            <button className="default_btn">
+              <i class="fa fa-shopping-bag" aria-hidden="true"></i>Add to cart
+            </button>
+          </div>
+          <div className="card">
+            <img src={product} />
+            <div className="rating">
+              <p>Coffee</p>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star "></span>
               <span class="fa fa-star"></span>
             </div>
             <h2>brazil coffee gred</h2>
@@ -35,25 +54,7 @@ const Products = () => {
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-            </div>
-            <h2>brazil coffee gred</h2>
-            <h4>
-              Price - <price>$320.00/</price>$358
-            </h4>
-            <button className="default_btn">
-              <i class="fa fa-shopping-bag" aria-hidden="true"></i>Add to cart
-            </button>
-          </div>
-          <div className="card">
-            <img src={product} />
-            <div className="rating">
-              <p>Coffee</p>
               <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
             </div>
             <h2>brazil coffee gred</h2>
             <h4>

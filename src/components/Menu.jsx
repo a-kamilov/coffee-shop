@@ -11,7 +11,7 @@ const Menu = () => {
     <div className="menu">
       <h1>Coffee popular menu</h1>
       <div className="menu_items">
-        <div className="item wrapper">
+        <div className="item">
           <img src={menu_c1} />
           <h2>Americano rosted gred</h2>
           <p>$12:00</p>
@@ -19,7 +19,7 @@ const Menu = () => {
             Order
           </a>
         </div>
-        <div className="item wrapper">
+        <div className="item">
           <img src={menu_c2} />
           <h2>Americano rosted gred</h2>
           <p>$12:00</p>
@@ -27,7 +27,7 @@ const Menu = () => {
             Order
           </a>
         </div>
-        <div className="item wrapper">
+        <div className="item">
           <img src={menu_c3} />
           <h2>Americano rosted gred</h2>
           <p>$12:00</p>
@@ -35,7 +35,7 @@ const Menu = () => {
             Order
           </a>
         </div>
-        <div className="item wrapper">
+        <div className="item">
           <img src={menu_c4} />
           <h2>Americano rosted gred</h2>
           <p>$12:00</p>
@@ -43,7 +43,7 @@ const Menu = () => {
             Order
           </a>
         </div>
-        <div className="item wrapper">
+        <div className="item">
           <img src={menu_c5} />
           <h2>Americano rosted gred</h2>
           <p>$12:00</p>
@@ -51,7 +51,7 @@ const Menu = () => {
             Order
           </a>
         </div>
-        <div className="item wrapper">
+        <div className="item">
           <img src={menu_c1} />
           <h2>Americano rosted gred</h2>
           <p>$12:00</p>
@@ -59,7 +59,7 @@ const Menu = () => {
             Order
           </a>
         </div>
-        <div className="item wrapper">
+        <div className="item">
           <img src={menu_c3} />
           <h2>Americano rosted gred</h2>
           <p>$12:00</p>
@@ -67,7 +67,7 @@ const Menu = () => {
             Order
           </a>
         </div>
-        <div className="item wrapper">
+        <div className="item">
           <img src={menu_c3} />
           <h2>Americano rosted gred</h2>
           <p>$12:00</p>

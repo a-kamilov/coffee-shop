@@ -7,6 +7,7 @@ import Menu from './components/Menu'
 import Customers from './components/Customers'
 import Reservation from './components/Reservation'
 import Testimonial from './components/Testimonial'
+import Footer from './components/Footer'
 const App = () => {
   return (
     <div className='App'>
@@ -17,6 +18,7 @@ const App = () => {
       <Customers/>
       <Reservation/>
       <Testimonial/>
+      <Footer/>
     </div>
   )
 }
