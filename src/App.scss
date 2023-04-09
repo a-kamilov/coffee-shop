@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+$ff_inter: "Inter", sans-serif;
+$ff_urbanist: "Urbanist", sans-serif;
+$ff_righteous: "Righteous", cursive;
+
 a {
   color: white;
   text-decoration: none;
@@ -20,10 +25,6 @@ button:hover {
 
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Righteous&family=Urbanist&display=swap");
 
-// font-family: 'Inter', sans-serif;
-// font-family: 'Righteous', cursive;
-// font-family: 'Urbanist', sans-serif;
-
 .App {
   border: 4px solid red;
   max-width: 1920px;
@@ -38,7 +39,7 @@ button:hover {
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      font-family: "Inter", sans-serif;
+      font-family: $ff_inter;
       background: #1c1814;
       & > img {
         cursor: pointer;
@@ -63,23 +64,23 @@ button:hover {
     }
     & > .h_content {
       background: url(components/img/h_content.png) center center / cover;
-      padding: 199px 0 199px 375px;
+      padding: 199px 0 199px 18%;
       & > .left {
         width: 540px;
         color: white;
         & > h1 {
-          font-family: "Righteous", cursive;
+          font-family: $ff_righteous;
           font-size: 72px;
           font-weight: 300;
         }
         p {
-          font-family: "Urbanist", sans-serif;
+          font-family: $ff_urbanist;
           font-size: 20px;
           line-height: 36px;
           margin: 32px 0 64px;
         }
         button {
-          font-family: "Inter", sans-serif;
+          font-family: $ff_inter;
           width: 202px;
           height: 70px;
           &:hover {
@@ -105,7 +106,7 @@ button:hover {
         content: "Play video";
         display: block;
         text-transform: uppercase;
-        font-family: "Inter", sans-serif;
+        font-family: $ff_inter;
         margin-top: 20px;
       }
     }
@@ -121,7 +122,7 @@ button:hover {
         color: white;
         margin: 0 18px;
         & > p {
-          font-family: "Righteous", cursive;
+          font-family: $ff_righteous;
           font-size: 24px;
           margin-bottom: 24px;
           &::before {
@@ -167,18 +168,18 @@ button:hover {
       & > h5 {
         font-size: 18px;
         color: #c99e71;
-        font-family: "Urbanist", sans-serif;
+        font-family: $ff_urbanist;
       }
       & > h1 {
         font-size: 48px;
-        font-family: "Righteous", cursive;
+        font-family: $ff_righteous;
         color: white;
         font-weight: 400;
         line-height: 62px;
         margin: 12px 0 36px;
       }
       & > p {
-        font-family: "Urbanist", sans-serif;
+        font-family: $ff_urbanist;
         color: white;
         opacity: 80%;
         line-height: 28px;
@@ -186,10 +187,8 @@ button:hover {
       }
     }
   }
-
   & > .products {
-    border: 2px solid red;
-    font-family: "Urbanist", sans-serif;
+    font-family: $ff_urbanist;
     text-align: center;
     margin-top: 140px;
     & > h5 {
@@ -197,7 +196,7 @@ button:hover {
     }
     & > h1 {
       color: white;
-      font-family: "Righteous", cursive;
+      font-family: $ff_righteous;
       margin: 12px 0 56px;
       font-weight: 400;
       font-size: 48px;
@@ -206,6 +205,7 @@ button:hover {
       display: flex;
       flex-direction: row;
       justify-content: center;
+      flex-wrap: wrap;
       & > .card {
         padding: 48px 48px 36px;
         background: #121315;
@@ -245,7 +245,7 @@ button:hover {
           }
         }
         & > h2 {
-          font-family: "Righteous", cursive;
+          font-family: $ff_righteous;
           font-weight: 400;
           font-size: 24px;
           text-transform: uppercase;
@@ -257,7 +257,7 @@ button:hover {
           display: none;
           height: 48px;
           width: 169px;
-          font-family: "Urbanist", sans-serif;
+          font-family: $ff_urbanist;
           &:hover {
             cursor: pointer;
           }
@@ -266,7 +266,7 @@ button:hover {
           }
         }
         & > h4 {
-          font-family: "Urbanist", sans-serif;
+          font-family: $ff_urbanist;
           font-size: 18px;
           font-weight: 400;
           color: white;
@@ -279,7 +279,7 @@ button:hover {
     & > button {
       height: 62px;
       width: 252px;
-      font-family: "Inter", sans-serif;
+      font-family: $ff_inter;
       text-transform: uppercase;
       font-weight: 600;
       margin-top: 56px;
@@ -288,7 +288,92 @@ button:hover {
       }
     }
   }
+  & > .c_machine {
+    margin: 140px auto;
+    background: #1c1814;
+    max-width: 1170px;
+    width: 100%;
+    padding: 85px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    & > .c_machine_data {
+      margin-left: 12%;
+      color: white;
+      width: 50%;
+      & > h1 {
+        font-family: "Righteous", cursive;
+        font-weight: 400;
+        font-size: 48px;
+        &::before {
+          content: "Coffee";
+          display: block;
+        }
+      }
+      & > p {
+        font-family: $ff_urbanist;
+        margin: 36px 0;
+        opacity: 80%;
+        line-height: 29px;
+        text-transform: capitalize;
+      }
+      & > button {
+        width: 215px;
+        height: 62px;
+        font-family: $ff_inter;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+  }
 
-  
+  & > .menu {
+    border: 2px solid red;
+    color: white;
+    margin: auto;
+    & > h1 {
+      text-align: center;
+      font-family: $ff_righteous;
+      font-size: 48px;
+      font-weight: 400;
+      &::before {
+        content: "Menu";
+        display: block;
+        color: #c99e71;
+        font-size: 18px;
+        font-family: $ff_urbanist;
+        margin-bottom: 10px;
+      }
+    }
 
+    & > .menu_items {
+      border: 3px solid blue;
+      margin-top: 56px; 
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      & > .item {
+        height: 120px;
+        width: 565px;
+        border: 2px solid red;
+        padding: 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 18px 20px 20px 18px;
+        & > h2 {
+          font-family: $ff_righteous;
+          font-weight: 400;
+          margin-left: 20px;
+        }
+        & > p {
+          color: #c99e71;
+          font-family: $ff_urbanist;
+          font-size: 18px;
+          font-weight: 600;
+          margin-left: 20%;
+        }
+      }
+    }
+  }
 }

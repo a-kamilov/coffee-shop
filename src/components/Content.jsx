@@ -4,7 +4,7 @@ import coffee_2 from "./img/coffee_2.png";
 import coffee_3 from "./img/coffee_3.png";
 import coffee_4 from "./img/coffee_4.png";
 
-const Content_1 = () => {
+const Content = () => {
   return (
     <>
       <div className="c_1">
@@ -45,4 +45,4 @@ const Content_1 = () => {
   );
 };
 
-export default Content_1;
+export default Content;

@@ -1,15 +1,17 @@
 import React from 'react'
 import './App.scss'
 import Header from './components/Header'
-import Content_1 from './components/Content_1'
+import Content from './components/Content'
 import Products from './components/Products'
+import Menu from './components/Menu'
 
 const App = () => {
   return (
     <div className='App'>
       <Header/>
-      <Content_1/>
+      <Content/>
       <Products/>
+      <Menu/>
     </div>
   )
 }
